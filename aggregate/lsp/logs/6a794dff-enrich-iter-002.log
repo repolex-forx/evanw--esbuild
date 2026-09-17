@@ -1,0 +1,31 @@
+[2026-09-17T06:02:23Z] === ENRICH ITERATION 2 START | repo=evanw/esbuild sha=6a794dff ===
+[2026-09-17T06:02:23Z] [iter=2] PHASE START: enrich repo=evanw/esbuild sha=6a794dff runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/6a794dff-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/6a794dff68e6a43539f6da671e3080efdf11ca70.nq.gz
+[2026-09-17T06:02:24Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=80 MB
+[2026-09-17T06:03:42Z] [iter=2] AST store loaded triples=7364670 load_secs=76 mem_mb=1039 MB
+[2026-09-17T06:03:42Z] [iter=2] Step 2: Finding LSP targets mem_mb=1039 MB
+[2026-09-17T06:03:48Z] [iter=2] LSP targets found call_sites=45872 imports=0 extends=9 implements=0 secs=6
+[2026-09-17T06:03:50Z] [iter=2] Loaded checkpoint partial graph triples=35323
+[2026-09-17T06:03:51Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1039 MB
+[2026-09-17T06:04:38Z] [iter=2] Position index built positions=497417 nodes_with_types=571188 secs=47 mem_mb=1312 MB
+[2026-09-17T06:04:38Z] [iter=2] Step 3: Starting LSP resolution mem_mb=1312 MB already_completed_types=[] already_completed_files=22
+[2026-09-17T06:04:38Z] [iter=2] Resolving target type target_type=call_site count=45872
+[2026-09-17T06:04:42Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=2.3 files_done=0 resolved=0 errors=45872 current=scripts/decorator-tests.ts
+[2026-09-17T06:56:09Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=53.8 files_done=1 resolved=805 errors=46883 current=lib/npm/node-install.ts
+[2026-09-17T06:57:16Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=54.9 files_done=2 resolved=830 errors=46905 current=lib/deno/wasm.ts
+[2026-09-17T06:59:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=57.0 files_done=3 resolved=843 errors=46946 current=lib/deno/mod.ts
+[2026-09-17T07:02:09Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=59.8 files_done=4 resolved=873 errors=47001 current=compat-table/src/mdn.ts
+[2026-09-17T07:02:46Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=60.4 files_done=5 resolved=890 errors=47013 current=lib/shared/common.ts
+[2026-09-17T07:23:16Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=80.9 files_done=6 resolved=1055 errors=47417 current=lib/shared/uint8array_json_parser.ts
+[2026-09-17T07:24:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=81.9 files_done=7 resolved=1069 errors=47438 current=compat-table/src/css_table.ts
+[2026-09-17T07:29:02Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=86.6 files_done=9 resolved=1131 errors=47531 current=compat-table/src/compat-table.ts
+[2026-09-17T07:29:36Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=87.2 files_done=10 resolved=1133 errors=47542 current=compat-table/src/js_table.ts
+[2026-09-17T07:32:20Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=89.9 files_done=13 resolved=1213 errors=47596 current=compat-table/src/index.ts
+[2026-09-17T07:32:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=90.6 files_done=14 resolved=1225 errors=47609 current=lib/npm/node-platform.ts
+[2026-09-17T07:35:20Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=92.9 files_done=17 resolved=1243 errors=47655 current=lib/shared/worker.ts
+[2026-09-17T07:35:41Z] [iter=2] Target type resolved target_type=call_site resolved=1263 errors=47662 secs=5463 mem_mb=1330 MB
+[2026-09-17T07:35:41Z] [iter=2] Resolving target type target_type=extends_clause count=9
+[2026-09-17T07:35:44Z] [iter=2] Target type resolved target_type=extends_clause resolved=8 errors=0 secs=2 mem_mb=1330 MB
+[2026-09-17T07:35:53Z] [iter=2] Step 5: Writing final enrichment file triples=128602
+[2026-09-17T07:35:56Z] [iter=2] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/6a794dff68e6a43539f6da671e3080efdf11ca70.nq.gz size_kb=2208
+[2026-09-17T07:35:56Z] [iter=2] Checkpoint cleared (enrichment complete)
+[2026-09-17T07:35:56Z] [iter=2] PHASE END: enrich elapsed_s=5613 elapsed_min=93.5 total_triples=128602
